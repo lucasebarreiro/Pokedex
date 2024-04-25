@@ -8,13 +8,21 @@
 
     .pokeHeader{
         display: flex;
-    }
 
+    }
+                                /*PARA PANTALLA PC*/
     .titulo{
         padding-left: 85px;
     }
 
+    .usuarioLoged{
+        margin-right: 200px;
 
+    }
+
+    .pokedex{
+        padding-left: 150px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -26,9 +34,13 @@
     .botonLogin{
         margin-left: 55px;
     }
-
+                                /*PARA PANTALLA Mobile*/
     .titulo{
-        padding-left: 85px;
+        padding-left: 100px;
+    }
+
+    .usuarioLoged{
+        margin-left: 65px;
     }
     
 
