@@ -33,33 +33,6 @@ include ("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA.
     </div>
 
     <div class="container mt-3 ">
-
-        <table class="table table-bordered border-secondary table-dark ">
-            <thead>
-            <tr class="">
-                <th>Numero</th>
-                <th>Nombre</th>
-                <th>Tipo</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>001</td>
-                <td>Bulbasaur</td>
-                <td>Planta</td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Ivysaur</td>
-                <td>Planta</td>
-            </tr>
-            <tr>
-                <td>003</td>
-                <td>Venusaur</td>
-                <td>Planta - Veneno</td>
-            </tr>
-            </tbody>
-        </table>
     </div>
 
 </body>

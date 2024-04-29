@@ -28,14 +28,13 @@ function consultarBase($usuario, $contraseña)
     $conn = mysqli_connect($servername, $username, $password, $database);
 
     //VERIFICAMOS LA CONEXION
-    if (!$conn){
-        die("Error al conectar con la base de datos: " . mysqli_connect_error());
-
+    if ($conn->connect_error) {
+        die("Error de conexión: " . $conn->connect_error);
     }
 
     // REALIZAR CONSULTA
-    $sql = "SELECT * FROM login WHERE usuario = '" . $usuario . "' && contraseña= '" . $contraseña . "'";
-    $result = mysqli_query($conn, $sql);
+    $sql_usuario = "SELECT * FROM usuario WHERE usuario = '" . $usuario . "' && contraseña= '" . $contraseña . "'";
+    $result = mysqli_query($conn, $sql_usuario);
     return mysqli_num_rows($result) == 1;
 
 }

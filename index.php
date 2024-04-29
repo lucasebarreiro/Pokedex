@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,9 +28,17 @@ include ("header.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO
         <table class="table table-bordered border-secondary table-dark ">
             <thead>
             <tr class="">
-                <th>Numero</th>
-                <th>Nombre</th>
-                <th>Tipo</th>
+                <th scope="col">#</th>
+                <th scope="col">Imagen</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Tipo</th>
+                <!--//<?php
+                //if ($usuarioConectado) {
+                //    echo '<th scope="col">Editar</th>';
+                //    echo '<th scope="col">Borrar</th>';
+                //}
+                //?> -->
             </tr>
             </thead>
             <tbody>
