@@ -37,7 +37,7 @@ if ($conexion->connect_error) {
         <button class="btn btn-outline-dark" type="submit">Buscar</button>
     </form>
     <br>
-    <a href="cargarPokemon.php">Cargar Pokemon</a>
+    <a class="btn btn-outline-dark" href="cargarPokemon.php">Cargar Pokemon</a>
 </div>
 
 <div class="container mt-3 table-scroll">
@@ -67,8 +67,15 @@ if ($conexion->connect_error) {
                     <td><?php echo $data ["nombre"] ?></td>
                     <td><?php echo $data ["tipo"] ?></td>
 
-                    <td style="display: block"><button><a  href="eliminar.php">Eliminar</a></button><br>
-                        <button><a href="editarPokemon.php">Editar</a></button>
+                    <td style="display: block">
+                        <div class="btn-group" role="group" aria-label="Acciones">
+                            <button type="button" class="btn btn-danger">
+                                <a href="eliminar.php" style="color: white;">Eliminar</a>
+                            </button>
+                            <button type="button" class="btn btn-warning">
+                                <a href="editarPokemon.php" style="color: white;">Editar</a>
+                            </button>
+                        </div>
                     </td>
                 </tr>
                 <?php
