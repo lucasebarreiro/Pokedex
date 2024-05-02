@@ -17,10 +17,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2fpJhqWyN39Oc1Cx9k0dSmPfgjz" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -64,6 +64,7 @@
       <updated>1714492207326</updated>
       <workItem from="1714492208394" duration="19781000" />
       <workItem from="1714614768614" duration="1496000" />
+      <workItem from="1714658197995" duration="412000" />
     </task>
     <servers />
   </component>
