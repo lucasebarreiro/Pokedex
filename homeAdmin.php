@@ -76,13 +76,16 @@ if ($conexion->connect_error) {
                     <td><?php echo $tipos[$data["tipo_id"]] ?></td>
                     <td><?php echo $tipos[$data["tipo2_id"]] ?></td>
 
-                    <td style="display: block">
+                    <td>
                         <div class="btn-group" role="group" aria-label="Acciones">
                             <button type="button" class="btn btn-danger">
                                 <a href="eliminar.php?id=<?php echo $data['id']; ?>" style="color: white;">Eliminar</a>
                             </button>
                             <button type="button" class="btn btn-warning">
                                 <a href="editarPokemon.php" style="color: white;">Editar</a>
+                            </button>
+                            <button type="button" class="btn btn-info">
+                                <a href="detalle.php?id=<?php echo $data['id']; ?>" style="color: white;">Detalles</a>
                             </button>
                         </div>
                     </td>
