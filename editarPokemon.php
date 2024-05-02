@@ -17,7 +17,7 @@ include_once "headerloged.php";
 ?>
 
 <form class="form" action="editar.php" method="POST" enctype="multipart/form-data">
-    <h1>Edite su pokamion</h1>
+    <h1>Editar Pokemón</h1>
     <label> Numero: </label>
     <input type="text" name="id" id="id"><br><br>
     <label> Nombre: </label>

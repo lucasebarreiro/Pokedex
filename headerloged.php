@@ -30,7 +30,7 @@
 
             if (isset($_SESSION["usuario"])){
                 echo "Hola" . " " .  $_SESSION["usuario"] . "!";  //Y ACA SI LE PASAMOS UN DATO POR SESSION NOS SALUDA, SINO AL INDEX PAPU
-                echo '<a href="index.php"><button>Log Out</button></a>';
+                echo '<a href="index.php"><button class="btn btn-outline-dark">Log Out</button></a>';
             }else{
                 header("location:index.php");
                 exit();
