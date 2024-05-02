@@ -32,8 +32,8 @@ if ($conexion->connect_error) {
 
 <div style="display: block" class="container pt-2">
     <!-- Formulario de búsqueda -->
-    <form class="d-flex">
-        <input class="form-control me-2 border-primary border-dark" type="search" placeholder="Busca un bicho" aria-label="Buscar">
+    <form class="d-flex" method="POST" action="buscar.php">
+        <input class="form-control me-2 border-primary border-dark" type="search" placeholder="Busca un bicho" aria-label="Buscar" name="buscar">
         <button class="btn btn-outline-dark" type="submit">Buscar</button>
     </form>
     <br>
