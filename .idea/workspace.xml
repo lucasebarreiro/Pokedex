@@ -5,185 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ccb0b37f-c902-45d0-9467-64030c440f57" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Pokedex.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Detalle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/pokedex.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/headerloged.php" beforeDir="false" afterPath="$PROJECT_DIR$/headerloged.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Abra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Aerodactyl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Alakazam.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Arbok.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Arcanine.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Articuno.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Beedrill.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Bellsprout.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Blastoise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Bulbasaur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Butterfree.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Caterpie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Chansey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Charizard.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Charmander.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Charmeleon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Clefable.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Clefairy.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Cloyster.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Cubone.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Dewgong.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Diglett.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Ditto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Dodrio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Doduo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Dragonair.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Dragonite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Dratini.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Drowzee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Dugtrio.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Eevee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Ekans.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Electabuzz.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Electrode.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Exeggcute.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Exeggutor.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Farfetch'd.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Fearow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Flareon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Gastly.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Gengar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Geodude.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Gloom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Golbat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Goldeen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Golduck.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Golem.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Graveler.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Grimer.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Growlithe.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Gyarados.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Haunter.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Hitmonchan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Hitmonlee.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Horsea.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Hypno.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Ivysaur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Jigglypuff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Jolteon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Jynx.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Kabuto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Kabutops.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Kadabra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Kakuna.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Kangaskhan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Kingler.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Koffing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Krabby.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Lapras.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Lickitung.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Machamp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Machoke.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Machop.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Magikarp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Magmar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Magnemite.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Magneton.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Mankey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Marowak.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Meowth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Metapod.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Mew.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Mewtwo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Moltres.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Mr_Mime.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Muk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Nidoking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Nidoqueen.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Nidoran_H.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Nidoran_M.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Nidorina.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Nidorino.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Ninetales.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Oddish.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Omanyte.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Omastar.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Onix.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Paras.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Parasect.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Persian.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Pidgeot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Pidgeotto.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Pidgey.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Pikachu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Pinsir.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Poliwag.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Poliwhirl.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Poliwrath.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Ponyta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Porygon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Primeape.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Psyduck.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Raichu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Rapidash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Raticate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Rattata.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Rhydon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Rhyhorn.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Sandshrew.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Sandslash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Scyther.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Seadra.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Seaking.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Seel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Shellder.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Slowbro.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Slowpoke.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Snorlax.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Spearow.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Squirtle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Starmie.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Staryu.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Tangela.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Tauros.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Tentacool.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Tentacruel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Vaporeon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Venomoth.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Venonat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Venusaur.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Victreebel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Vileplume.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Voltorb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Vulpix.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Wartortle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Weedle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Weepinbell.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Weezing.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Wigglytuff.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Zapdos.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/pokemones/Zubat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tipo/agua.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tipo/bicho.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tipo/electrico.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tipo/fuego.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tipo/planta.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tipo/veneno.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/img/tipo/volador.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lista-pokemones.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sesion.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sql/pokedex.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/DatabaseManager.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/Navigation.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/PokemonDAO.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/UsuarioDAO.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +32,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Programas/XAMPP/htdocs/Proyectos PW 2 - 2024/Pokedex 2024",
+    "last_opened_file_path": "D:/Programas/XAMPP/htdocs/Proyectos PW 2 - 2024/pokedex-main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -227,7 +49,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1714492207326</updated>
-      <workItem from="1714492208394" duration="19781000" />
+      <workItem from="1714492208394" duration="20390000" />
+      <workItem from="1714525013934" duration="7000" />
+      <workItem from="1714697003592" duration="367000" />
     </task>
     <servers />
   </component>
