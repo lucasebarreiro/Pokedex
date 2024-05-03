@@ -32,12 +32,12 @@ if ($conexion->connect_error) {
 
 <div style="display: block" class="container pt-2">
     <!-- Formulario de búsqueda -->
-    <form class="d-flex">
-        <input class="form-control me-2 border-primary border-dark" type="search" placeholder="Busca un bicho" aria-label="Buscar">
+    <form class="d-flex" method="POST" action="buscar.php">
+        <input class="form-control me-2 border-primary border-dark" type="search" placeholder="Busca un bicho" aria-label="Buscar" name="buscar">
         <button class="btn btn-outline-dark" type="submit">Buscar</button>
     </form>
     <br>
-    <a href="cargarPokemon.php">Cargar Pokemon</a>
+    <a class="btn btn-outline-dark" href="cargarPokemon.php">Cargar Pokemon</a>
 </div>
 
 <div class="container mt-3 table-scroll">
@@ -49,13 +49,21 @@ if ($conexion->connect_error) {
             <th>Imagen</th>
             <th>Nombre</th>
             <th>Tipo</th>
+            <th>Tipo 2</th>
             <th>Acciones</th>
         </tr>
         </thead>
         <tbody>
         <?php
         $query = mysqli_query($conexion, "SELECT * FROM pokemon"); //Seleccionamos todo de pokemon
+        $tipos_query = mysqli_query($conexion, "SELECT * FROM tipo_pokemon");
         $result = mysqli_num_rows($query); // Guardamos en result los valores dentro de la query almacenandolos como un NUMERO
+
+        $tipos = array();
+        while ($tipo = mysqli_fetch_assoc($tipos_query)) {
+            $tipos[$tipo['id']] = $tipo['nombre'];
+        }
+
         if($result > 0){ // si lo de arriba es >0 se ejecuta el while de abajo
             while ($data = mysqli_fetch_array($query)){ //metemos en data todo loque hay en el query COMO ARRAY
                 //Para el resultado 1 Guarda en data los datos como un array
@@ -65,10 +73,21 @@ if ($conexion->connect_error) {
                     <td><?php echo $data ["id"] ?></td>
                     <td><img height="50px" src="data:imagenes/png;base64, <?php echo base64_encode($data ["imagen"])?>" alt=""></td>
                     <td><?php echo $data ["nombre"] ?></td>
-                    <td><?php echo $data ["tipo"] ?></td>
+                    <td><?php echo $tipos[$data["tipo_id"]] ?></td>
+                    <td><?php echo $tipos[$data["tipo2_id"]] ?></td>
 
-                    <td style="display: block"><button><a  href="eliminar.php">Eliminar</a></button><br>
-                        <button><a href="editarPokemon.php">Editar</a></button>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Acciones">
+                            <button type="button" class="btn btn-danger">
+                                <a href="eliminar.php?id=<?php echo $data['id']; ?>" style="color: white;">Eliminar</a>
+                            </button>
+                            <button type="button" class="btn btn-warning">
+                                <a href="editarPokemon.php" style="color: white;">Editar</a>
+                            </button>
+                            <button type="button" class="btn btn-info">
+                                <a href="detalle.php?id=<?php echo $data['id']; ?>" style="color: white;">Detalles</a>
+                            </button>
+                        </div>
                     </td>
                 </tr>
                 <?php
