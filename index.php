@@ -14,64 +14,9 @@
 include ("header.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
 ?>
 
-    <div class="container pt-2">
-        <!-- Formulario de búsqueda -->
-        <form class="d-flex">
-            <input class="form-control me-2 border-primary border-dark" type="search" placeholder="Busca un bicho" aria-label="Buscar">
-            <button class="btn btn-outline-dark" type="submit">Buscar</button>
-        </form>
-    </div>
 
-    <div class="container mt-3 ">
-
-        <table class="table table-bordered border-secondary table-dark ">
-            <thead>
-            <tr class="">
-                <th>Numero</th>
-                <th>Nombre</th>
-                <th>Tipo</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                <td>001</td>
-                <td>Bulbasaur</td>
-                <td>Planta</td>
-            </tr>
-            <tr>
-                <td>002</td>
-                <td>Ivysaur</td>
-                <td>Planta</td>
-            </tr>
-            <tr>
-                <td>003</td>
-                <td>Venusaur</td>
-                <td>Planta - Veneno</td>
-            </tr>
-            </tbody>
-        </table>
-    </div>
 
 </body>
 </html>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<?php

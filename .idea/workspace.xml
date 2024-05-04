@@ -4,8 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="ccb0b37f-c902-45d0-9467-64030c440f57" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+=======
+    <list default="true" id="8f3dca41-a2e1-4ca4-bd3b-fe3295b35104" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buscar.php" beforeDir="false" afterPath="$PROJECT_DIR$/buscar.php" afterDir="false" />
+>>>>>>> da699995af6219fd5b593114fb8a99a4d7e02f9e
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,21 +24,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP" />
-  <component name="ProjectId" id="2fpJhqWyN39Oc1Cx9k0dSmPfgjz" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php" />
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="2fupoPyLGBleGWw2ZNzWuFqxRim" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JavaScript Debug.index.php.executor": "Run",
+    "PHP Script.index.php.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+<<<<<<< HEAD
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/Programas/XAMPP/htdocs/Proyectos PW 2 - 2024/pokedex-main",
+=======
+    "git-widget-placeholder": "feature/moraa",
+    "last_opened_file_path": "/opt/lampp/htdocs/pokedex",
+>>>>>>> da699995af6219fd5b593114fb8a99a4d7e02f9e
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -41,17 +53,31 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-PS-241.14494.237" />
+        <option value="bundled-php-predefined-ba97393d7c68-8f0632a2a215-com.jetbrains.php.sharedIndexes-PS-241.14494.237" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ccb0b37f-c902-45d0-9467-64030c440f57" name="Changes" comment="" />
-      <created>1714492207326</created>
+      <changelist id="8f3dca41-a2e1-4ca4-bd3b-fe3295b35104" name="Changes" comment="" />
+      <created>1714660992012</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1714492207326</updated>
       <workItem from="1714492208394" duration="20390000" />
       <workItem from="1714525013934" duration="7000" />
       <workItem from="1714697003592" duration="367000" />
+=======
+      <updated>1714660992012</updated>
+      <workItem from="1714660993032" duration="82000" />
+      <workItem from="1714661075586" duration="6960000" />
+>>>>>>> da699995af6219fd5b593114fb8a99a4d7e02f9e
     </task>
     <servers />
   </component>

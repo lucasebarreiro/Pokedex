@@ -27,6 +27,7 @@ if ($conexion->connect_error) {
     die("Error en la conexión: " . $conexion->connect_error);
 }
 
+
 ?>
 
 
@@ -49,12 +50,24 @@ if ($conexion->connect_error) {
                 <th>Imagen</th>
                 <th>Nombre</th>
                 <th>Tipo</th>
+                <th>Tipo 2</th>
             </tr>
             </thead>
             <tbody>
             <?php
                 $query = mysqli_query($conexion, "SELECT * FROM pokemon"); //Seleccionamos todo de pokemon
                 $result = mysqli_num_rows($query); // Guardamos en result los valores dentro de la query almacenandolos como un NUMERO
+                 $tipos_query = mysqli_query($conexion, "SELECT * FROM tipo_pokemon");
+
+                     $tipos = array();
+                    while ($tipo = mysqli_fetch_assoc($tipos_query)) {
+                        $tipos[$tipo['id']] = $tipo['nombre'];
+                    }
+
+
+
+
+
                 if($result > 0){ // si lo de arriba es >0 se ejecuta el while de abajo
                     while ($data = mysqli_fetch_array($query)){ //metemos en data todo loque hay en el query COMO ARRAY
                         //Para el resultado 1 Guarda en data los datos como un array
@@ -62,9 +75,17 @@ if ($conexion->connect_error) {
             <tr>
                 <!-- Entonces de data pedimos el id, la imagen, nombre y tipo-->
                 <td><?php echo $data ["id"] ?></td>
-                <td><img height="50px" src="data:imagenes/png;base64, <?php echo base64_encode($data ["imagen"])?>" alt=""></td>
+                <td><img height="100px" src="data:imagenes/png;base64, <?php echo base64_encode($data ["imagen"])?>" alt=""></td>
                 <td><?php echo $data ["nombre"] ?></td>
-                <td><?php echo $data ["tipo"] ?></td>
+                <td><img height="20px" src="imagenes/<?php echo $tipos[$data["tipo_id"]] ?>.png" alt=""></td>
+                <td>
+                    <?php
+                    if (!empty($tipos[$data["tipo2_id"]])) {
+                        echo "<img height='20px' src='imagenes/" . $tipos[$data['tipo2_id']] . ".png' alt=''></td>";
+                    }
+
+                    ?>
+                </td>
             </tr>
             <?php
                 }
