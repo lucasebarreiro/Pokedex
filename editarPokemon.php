@@ -41,7 +41,7 @@ include_once "headerloged.php";
     <input type="text" name="nombre" id="nombre"><br><br>
 
     <label>Descripción:</label><br>
-    <textarea name="descripcion" id="descripcion" rows="4" cols="50"></textarea><br><br>
+    <textarea name="description" id="description" rows="4" cols="50"></textarea><br><br>
 
     <label>Tipo 1:</label>
     <select name="tipo_id" id="tipo_id">
