@@ -67,6 +67,8 @@ include_once "headerloged.php";
             echo '<option value="' . $id . '">' . ucfirst($tipo) . '</option>';
         }
         ?>
+
+
     </select><br><br>
 
     <label>Imagen:</label>

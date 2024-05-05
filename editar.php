@@ -16,6 +16,8 @@ $nombre = $_POST["nombre"];
 $description = $_POST["description"];
 $tipo_id = $_POST["tipo_id"];
 $tipo2_id = $_POST["tipo2_id"];
+$imagen = addslashes(file_get_contents($_FILES["imagen"]["tmp_name"]));
+
 
 // verificar si la imagen se subió
 if(isset($_FILES["imagen"]) && $_FILES["imagen"]["size"] > 0) {
@@ -35,6 +37,7 @@ if (empty($_POST["id"]) || empty($_POST["nombre"])){
     echo "Completa todos los campos";
 } else {
     $resultado = $stmt->execute();
+
 
     if ($resultado){
         echo "Se han insertado los datos";
