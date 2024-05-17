@@ -1,9 +1,11 @@
 <?php
 
-$servername = "localhost";
-$usuario = "root";
-$contraseña = "";
-$database = "pokedex2024";
+$config = parse_ini_file("config.ini");
+
+$servername = $config["servername"];
+$usuario = $config["usuario"];
+$contraseña = $config[""];
+$database = $config["database"];
 
 $conexion = mysqli_connect($servername, $usuario, $contraseña, $database);
 
