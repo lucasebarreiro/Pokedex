@@ -1,14 +1,6 @@
 <?php
-include_once("Database.php");
-$config = parse_ini_file("config.ini");
-
-$servername = $config["servername"];
-$usuario = $config["usuario"];
-$contrasena = $config[""];
-$database = $config["database"];
-
-$database = new Database($servername, $usuario, $contrasena, $database);
-//$pokemon = $database->query("SELECT * FROM pokemon");
+include_once("Configuration.php");
+$database = Configuration::getDatabase();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $dataPokemon = $_POST["buscar"];
@@ -29,12 +21,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $result = $database->query("SELECT * FROM pokemon");
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
-                echo 'Pokemon n°' . $row["id"] . ", nombre :" . $row["nombre"] . ", tipo:" . $row["tipo_id"] . ".<br>";
+                echo 'Pokemon n°' . $row["id"] . ", nombre: " . $row["nombre"] . ", tipo: " . $row["tipo_id"] . ".<br>";
             }
         } else {
             echo "No hay ningún Pokémon en la base de datos.";
         }
     }
 }
-
 ?>

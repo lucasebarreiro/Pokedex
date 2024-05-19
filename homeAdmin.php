@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Home</title>
+    <title>Home Admin</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -11,25 +11,13 @@
 <body>
 
 <?php
-include ("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
+include ("headerloged.php");
 
-$config = parse_ini_file("config.ini");
+include_once("Configuration.php");
+include_once("Database.php");
 
-$servername = $config["servername"];
-$usuario = $config["usuario"];
-$contraseña = $config[""];
-$database = $config["database"];
-
-// Crear una conexión
-$conexion = mysqli_connect($servername, $usuario, $contraseña, $database);
-
-// Verificar la conexión
-if ($conexion->connect_error) {
-    die("Error en la conexión: " . $conexion->connect_error);
-}
-
+$db = Configuration::getDatabase();
 ?>
-
 
 <div style="display: block" class="container pt-2">
     <!-- Formulario de búsqueda -->
@@ -43,9 +31,9 @@ if ($conexion->connect_error) {
 
 <div class="container mt-3 table-scroll">
 
-    <table class="table table-bordered border-secondary table-dark ">
+    <table class="table table-bordered border-secondary table-dark">
         <thead>
-        <tr class="">
+        <tr>
             <th>Numero</th>
             <th>Imagen</th>
             <th>Nombre</th>
@@ -56,32 +44,31 @@ if ($conexion->connect_error) {
         </thead>
         <tbody>
         <?php
-        $query = mysqli_query($conexion, "SELECT * FROM pokemon"); //Seleccionamos todo de pokemon
-        $tipos_query = mysqli_query($conexion, "SELECT * FROM tipo_pokemon");
-        $result = mysqli_num_rows($query); // Guardamos en result los valores dentro de la query almacenandolos como un NUMERO
+        // Querying the database
+        $query = $db->query("SELECT * FROM pokemon");
+        $tipos_query = $db->query("SELECT * FROM tipo_pokemon");
+        $result = mysqli_num_rows($query);
 
+        // Fetching types into an array
         $tipos = array();
         while ($tipo = mysqli_fetch_assoc($tipos_query)) {
             $tipos[$tipo['id']] = $tipo['nombre'];
         }
 
-        if($result > 0){ // si lo de arriba es >0 se ejecuta el while de abajo
-            while ($data = mysqli_fetch_array($query)){ //metemos en data todo loque hay en el query COMO ARRAY
-                //Para el resultado 1 Guarda en data los datos como un array
+        if($result > 0){
+            while ($data = mysqli_fetch_array($query)){
                 ?>
                 <tr>
-                    <!-- Entonces de data pedimos el id, la imagen, nombre y tipo-->
-                    <td><?php echo $data ["id"] ?></td>
-                    <td><img height="100px" src="data:imagenes/png;base64, <?php echo base64_encode($data ["imagen"])?>" alt=""></td>
-                    <td><?php echo $data ["nombre"] ?></td>
+                    <td><?php echo $data["id"] ?></td>
+                    <td><img height="100px" src="data:imagenes/png;base64, <?php echo base64_encode($data["imagen"]) ?>" alt=""></td>
+                    <td><?php echo $data["nombre"] ?></td>
                     <td><img height="20px" src="./imagenes/tipos/<?php echo $tipos[$data["tipo_id"]] ?>.png" alt=""></td>
                     <td>
-                    <?php
-                    if (!empty($tipos[$data["tipo2_id"]])) {
-                        echo "<img height='20px' src='./imagenes/tipos/" . $tipos[$data['tipo2_id']] . ".png' alt=''></td>";
-                    }
-
-                    ?>
+                        <?php
+                        if (!empty($tipos[$data["tipo2_id"]])) {
+                            echo "<img height='20px' src='./imagenes/tipos/" . $tipos[$data['tipo2_id']] . ".png' alt=''></td>";
+                        }
+                        ?>
                     </td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Acciones">
@@ -89,7 +76,7 @@ if ($conexion->connect_error) {
                                 <a href="eliminar.php?id=<?php echo $data['id']; ?>" style="color: white;">Eliminar</a>
                             </button>
                             <button type="button" class="btn btn-warning">
-                                <a href="editarPokemon.php" style="color: white;">Editar</a>
+                                <a href="editarPokemon.php?id=<?php echo $data['id']; ?>" style="color: white;">Editar</a>
                             </button>
                             <button type="button" class="btn btn-info">
                                 <a href="detalle.php?id=<?php echo $data['id']; ?>" style="color: white;">Detalles</a>
@@ -101,7 +88,6 @@ if ($conexion->connect_error) {
             }
         }
         ?>
-
         </tbody>
     </table>
 </div>
