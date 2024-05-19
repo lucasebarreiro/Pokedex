@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/pokedex.css">
+    <link rel="stylesheet" href="public/css/pokedex.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -14,10 +14,10 @@
         <div>
             <?php
             if (isset($_SESSION["usuario"])&& $_SESSION["usuario"] == "admin"){
-               echo '<a href="homeAdmin.php.php"> <img class="logo" src="./imagenes/logo.png" alt=""></a>';
+               echo '<a href="homeAdmin.php.php"> <img class="logo" src="public/imagenes/logo.png" alt=""></a>';
             }else{
 
-             echo '<a href="home.php"> <img class="logo" src="./imagenes/logo.png" alt=""></a>';
+             echo '<a href="home.php"> <img class="logo" src="public/imagenes/logo.png" alt=""></a>';
             }
             ?>
         </div>
