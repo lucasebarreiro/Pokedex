@@ -21,7 +21,7 @@ class PokemonController
     public function getTipo()
     {
         $pokemones = $this->model->getTipoPokemon();
-        $this->presenter->render("view/template/pokemon.mustache", ["pokemones" => $pokemones]);
+        $this->presenter->render("", ["pokemones" => $pokemones]);
         include_once ("homeAdmin.php");
     }
 
