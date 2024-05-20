@@ -30,6 +30,11 @@ class PokemonModel{
         return $result->fetch_all(MYSQLI_ASSOC);
     }
 
+    public function getTipoPokemon() {
+        $result = $this->db->query("SELECT * FROM tipo_pokemon");
+        return $result->fetch_all(MYSQLI_ASSOC);
+    }
+
     public function getPokemonById($id) {
         $stmt = $this->db->prepare("SELECT * FROM pokemon WHERE id=?");
         $stmt->bind_param("i", $id);

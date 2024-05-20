@@ -17,15 +17,5 @@ class Database
 
     }
 
-    public function traerPokemon($sql){
-       $result =  mysqli_query($this->conexion,$sql);
-       return mysqli_num_rows($result);
 
-    }
-
-    public function traerTipoPokemon($sql){
-        $result =  mysqli_query($this->conexion ,$sql);
-        return mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-    }
 }

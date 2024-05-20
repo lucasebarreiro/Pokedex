@@ -15,6 +15,14 @@ class PokemonController
     {
         $pokemones = $this->model->getPokemones();
         $this->presenter->render("view/template/pokemon.mustache", ["pokemones" => $pokemones]);
+        include_once ("homeAdmin.php");
+    }
+
+    public function getTipo()
+    {
+        $pokemones = $this->model->getTipoPokemon();
+        $this->presenter->render("view/template/pokemon.mustache", ["pokemones" => $pokemones]);
+        include_once ("homeAdmin.php");
     }
 
 }

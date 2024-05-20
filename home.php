@@ -17,7 +17,7 @@ $config = parse_ini_file("config.ini");
 
 $servername = $config["servername"];
 $usuario = $config["usuario"];
-$contraseña = $config[""];
+$contraseña = $config["contraseña"];
 $database = $config["database"];
 
 // Crear una conexión
@@ -72,11 +72,11 @@ if ($conexion->connect_error) {
                 <td><?php echo $data ["id"] ?></td>
                 <td><img height="100px" src="data:imagenes/png;base64, <?php echo base64_encode($data ["imagen"])?>" alt=""></td>
                 <td><?php echo $data ["nombre"] ?></td>
-                <td><img height="20px" src="imagenes/tipos/<?php echo $tipos[$data["tipo_id"]] ?>.png" alt=""></td>
+                <td><img height="20px" src="public/imagenes/tipos/<?php echo $tipos[$data["tipo_id"]] ?>.png" alt=""></td>
                 <td>
                     <?php
                     if (!empty($tipos[$data["tipo2_id"]])) {
-                        echo "<img height='20px' src='imagenes/tipos/" . $tipos[$data['tipo2_id']] . ".png' alt=''></td>";
+                        echo "<img height='20px' src='public/imagenes/tipos/" . $tipos[$data['tipo2_id']] . ".png' alt=''></td>";
                     }
 
                     ?>
