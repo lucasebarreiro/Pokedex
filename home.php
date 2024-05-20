@@ -11,7 +11,7 @@
 <body>
 
 <?php
-include("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
+include("./view/template/headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
 
 $config = parse_ini_file("config/config.ini");
 
