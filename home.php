@@ -11,7 +11,7 @@
 <body>
 
 <?php
-include ("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
+include("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
 
 $config = parse_ini_file("config/config.ini");
 
@@ -37,7 +37,7 @@ if ($conexion->connect_error) {
             <button class="btn btn-outline-dark" type="submit">Buscar</button>
         </form>
         <br>
-        <a href="cargarPokemon.php">Cargar Pokemon</a>
+        <a href="view/template/cargarPokemon.php">Cargar Pokemon</a>
     </div>
 
     <div class="container mt-3 table-scroll">
