@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/pokedex.css">
+    <link rel="stylesheet" href="../../css/pokedex.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -23,7 +23,7 @@ include_once "headerloged.php";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/pokedex.css">
+    <link rel="stylesheet" href="../../css/pokedex.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -31,7 +31,7 @@ include_once "headerloged.php";
 include_once "headerloged.php";
 ?>
 
-<form class="form" action="editar.php" method="POST" enctype="multipart/form-data">
+<form class="form" action="../../index.php" method="POST" enctype="multipart/form-data">
     <h1>Editar Pokémon</h1>
 
     <label>Número:</label>

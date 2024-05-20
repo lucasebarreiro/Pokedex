@@ -11,7 +11,7 @@
 <body>
 
 <?php
-include ("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
+include("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
 
 include_once ("Configuration.php");
 
@@ -28,7 +28,7 @@ $db = Configuration::getDatabase();
         <button class="btn btn-outline-dark" type="submit">Buscar</button>
     </form>
     <br>
-    <a class="btn btn-outline-dark" href="cargarPokemon.php">Cargar Pokemon</a>
+    <a class="btn btn-outline-dark" href="view/template/cargarPokemon.php">Cargar Pokemon</a>
 </div>
 
 <div class="container mt-3 table-scroll">
@@ -82,10 +82,10 @@ $db = Configuration::getDatabase();
                                 <a href="eliminar.php?id=<?php echo $data['id']; ?>" style="color: white;">Eliminar</a>
                             </button>
                             <button type="button" class="btn btn-warning">
-                                <a href="editarPokemon.php" style="color: white;">Editar</a>
+                                <a href="view/template/editarPokemon.php" style="color: white;">Editar</a>
                             </button>
                             <button type="button" class="btn btn-info">
-                                <a href="detalle.php?id=<?php echo $data['id']; ?>" style="color: white;">Detalles</a>
+                                <a href="view/template/detalle.php?id=<?php echo $data['id']; ?>" style="color: white;">Detalles</a>
                             </button>
                         </div>
                     </td>
