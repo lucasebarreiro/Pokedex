@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="pokedex.css">
+    <link rel="stylesheet" href="css/pokedex.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -13,11 +13,12 @@
 <?php
 include ("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
 
-// Detalles de la conexión
-$servername = "localhost"; // Nombre del servidor de la base de datos
-$usuario = "root"; // Nombre de usuario de la base de datos
-$contraseña = ""; // Contraseña de la base de datos
-$database = "pokedex2024"; // Nombre de la base de datos
+$config = parse_ini_file("config.ini");
+
+$servername = $config["servername"];
+$usuario = $config["usuario"];
+$contraseña = $config[""];
+$database = $config["database"];
 
 // Crear una conexión
 $conexion = mysqli_connect($servername, $usuario, $contraseña, $database);
@@ -29,8 +30,6 @@ if ($conexion->connect_error) {
 
 
 ?>
-
-
     <div class="container pt-2">
         <!-- Formulario de búsqueda -->
         <form class="d-flex">
@@ -63,10 +62,6 @@ if ($conexion->connect_error) {
                     while ($tipo = mysqli_fetch_assoc($tipos_query)) {
                         $tipos[$tipo['id']] = $tipo['nombre'];
                     }
-
-
-
-
 
                 if($result > 0){ // si lo de arriba es >0 se ejecuta el while de abajo
                     while ($data = mysqli_fetch_array($query)){ //metemos en data todo loque hay en el query COMO ARRAY

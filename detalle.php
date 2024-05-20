@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="pokedex.css">
+    <link rel="stylesheet" href="css/pokedex.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
@@ -17,10 +17,12 @@ if (!isset($_GET["id"]) || !is_numeric($_GET["id"])) {
     exit();
 }
 
-$servername = "localhost";
-$usuario = "root";
-$contraseña = "";
-$database = "pokedex2024";
+$config = parse_ini_file("config.ini");
+
+$servername = $config["servername"];
+$usuario = $config["usuario"];
+$contraseña = $config[""];
+$database = $config["database"];
 
 $conexion = mysqli_connect($servername, $usuario, $contraseña, $database);
 

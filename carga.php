@@ -1,10 +1,11 @@
 <?php
 
-// Detalles de la conexión
-$servername = "localhost"; // Nombre del servidor de la base de datos
-$usuario = "root"; // Nombre de usuario de la base de datos
-$contraseña = ""; // Contraseña de la base de datos
-$database = "pokedex2024"; // Nombre de la base de datos
+$config = parse_ini_file("config.ini");
+
+$servername = $config["servername"];
+$usuario = $config["usuario"];
+$contraseña = $config[""];
+$database = $config["database"];
 
 // Crear una conexión
 $conexion = mysqli_connect($servername, $usuario, $contraseña, $database);
