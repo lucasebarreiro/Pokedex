@@ -14,10 +14,12 @@
 include ("headerloged.php"); //CREAMOS EL ARCHIVO HEADER.PHP y LO INCLUIMOS ACA. COMO EN LOS TP
 
 // Detalles de la conexión
-$servername = "localhost"; // Nombre del servidor de la base de datos
-$usuario = "root"; // Nombre de usuario de la base de datos
-$contraseña = ""; // Contraseña de la base de datos
-$database = "pokedex2024"; // Nombre de la base de datos
+$config = parse_ini_file("config.ini");
+
+$servername = $config["servername"]; // Nombre del servidor de la base de datos
+$usuario = $config["usuario"]; // Nombre de usuario de la base de datos
+$contraseña = $config["contraseña"]; // Contraseña de la base de datos
+$database = $config["database"]; // Nombre de la base de datos
 
 // Crear una conexión
 $conexion = mysqli_connect($servername, $usuario, $contraseña, $database);
@@ -26,6 +28,8 @@ $conexion = mysqli_connect($servername, $usuario, $contraseña, $database);
 if ($conexion->connect_error) {
     die("Error en la conexión: " . $conexion->connect_error);
 }
+
+
 
 ?>
 
